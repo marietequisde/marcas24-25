@@ -1,0 +1,60 @@
+h1 {
+	text-align: center;
+}
+
+.imagen_vehiculo {
+	height:200px;
+}
+
+.contenido {
+	padding:50px;
+	border:solid;
+	width: 500px;
+}
+
+.indice ul {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.fila_contenido {
+	vertical-align: top;
+}
+
+.tabla_contenido {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+	text-align: justify;
+}
+
+img {
+	display:block;
+	margin:auto;
+}
+
+.tabla_comparacion, .tabla_comparacion th, .tabla_comparacion td{
+	border:1px solid black;
+	
+}
+
+.tabla_comparacion th, .tabla_comparacion td {
+	padding: 10px;
+	text-align: center;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+dd {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+dd img {
+	margin-top: 0.5rem;
+}
