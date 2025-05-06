@@ -58,3 +58,8 @@ dd {
 dd img {
 	margin-top: 0.5rem;
 }
+
+form > div {
+	display: flex;
+	justify-content: space-evenly;
+}
