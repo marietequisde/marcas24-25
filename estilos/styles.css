@@ -84,6 +84,11 @@ form {
 	gap: 10px;
 }
 
+.div_formulario {
+	display: flex;
+	justify-content: center;
+}
+
 textarea {
 	width: 500px;
 }

@@ -79,66 +79,68 @@
 				</div>
 				
 				<h2 id="recomendacion">Recomendación vehículo según necesidades</h2>
-				<form>
-					<div>Nombre y apellidos: <input type="text" id="nombre" maxlength="40" size="40"></div>
-					<div>Edad: <input type="number" id="edad" min="0" max="150" step="1"></div>
-					<div>Tengo miedo a volar <input type="checkbox" id="volar" value="volar"></div>
-					<div>Tengo carnet de conducir <input type="checkbox" id="carnet" value="carnet"></div>
-					
-					<fieldset>
-						<legend>Vivo en:</legend>
-						<div>
-							<input type="radio" id="pueblo" name="vivo_en" value="un pueblo" checked >
-							<label for="pueblo">Un pueblo</label>
-						</div>
-						<div>
-							<input type="radio" id="ciudad" name="vivo_en" value="una ciudad">
-							<label for="ciudad">Una ciudad</label>
-						</div>
-					</fieldset>
-					<fieldset>
-						<legend>Viajo...</legend>
-						<div>
-							<input type="radio" id="1p" name="viajo" value="solo" checked >
-							<label for="1p">Solo</label>
-						</div>
-						<div>
-							<input type="radio" id="2p" name="viajo" value="con otra persona">
-							<label for="2p">Con otra persona</label>
-						</div>
-						<div>
-							<input type="radio" id="3p" name="viajo" value="con otras 2 personas">
-							<label for="3p">Con otras 2 personas</label>
-						</div>
-						<div>
-							<input type="radio" id="+p" name="viajo" value="con mas de 2 personas">
-							<label for="+p">Con mas de 2 personas</label>
-						</div>
-					</fieldset>
-					<label for="comidas">Comida favorita:</label>
-					<select name="comidas" id="comidas">
-						<option value="pizza">Pizza</option>
-						<option value="hamburguesa">Hamburguesa</option>
-						<option value="pasta">Pasta</option>
-						<option value="borrajas">Borrajas</option>
-						<option value="patatas">Patatas</option>
-					</select>
-					
-					<div>Color favorito: <input type="color" id="color"></div>
-					Texto favorito:
-					
-					<textarea id="multilinea" name="multilinea" rows="4" cols="50"></textarea> 
-					<div>Mes favorito: <input type="month" id="mes" name="mes"></div>
-					
+				<div class="div_formulario">
+					<form>
+						<div>Nombre y apellidos: <input type="text" id="nombre" maxlength="40" size="40"></div>
+						<div>Edad: <input type="number" id="edad" min="0" max="150" step="1"></div>
+						<div>Tengo miedo a volar <input type="checkbox" id="volar" value="volar"></div>
+						<div>Tengo carnet de conducir <input type="checkbox" id="carnet" value="carnet"></div>
+						
+						<fieldset>
+							<legend>Vivo en:</legend>
+							<div>
+								<input type="radio" id="pueblo" name="vivo_en" value="un pueblo" checked >
+								<label for="pueblo">Un pueblo</label>
+							</div>
+							<div>
+								<input type="radio" id="ciudad" name="vivo_en" value="una ciudad">
+								<label for="ciudad">Una ciudad</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Viajo...</legend>
+							<div>
+								<input type="radio" id="1p" name="viajo" value="solo" checked >
+								<label for="1p">Solo</label>
+							</div>
+							<div>
+								<input type="radio" id="2p" name="viajo" value="con otra persona">
+								<label for="2p">Con otra persona</label>
+							</div>
+							<div>
+								<input type="radio" id="3p" name="viajo" value="con otras 2 personas">
+								<label for="3p">Con otras 2 personas</label>
+							</div>
+							<div>
+								<input type="radio" id="+p" name="viajo" value="con mas de 2 personas">
+								<label for="+p">Con mas de 2 personas</label>
+							</div>
+						</fieldset>
+						<label for="comidas">Comida favorita:</label>
+						<select name="comidas" id="comidas">
+							<option value="pizza">Pizza</option>
+							<option value="hamburguesa">Hamburguesa</option>
+							<option value="pasta">Pasta</option>
+							<option value="borrajas">Borrajas</option>
+							<option value="patatas">Patatas</option>
+						</select>
+						
+						<div>Color favorito: <input type="color" id="color"></div>
+						Texto favorito:
+						
+						<textarea id="multilinea" name="multilinea" rows="4" cols="50"></textarea> 
+						<div>Mes favorito: <input type="month" id="mes" name="mes"></div>
+						
 
-					<div class="botones">
-						<input type="button" value="Borrar" onclick="borrar()">
-						<input type="button" value="Enviar" onclick="enviar()">
-					</div>
-					
-					Resultado: 
-					<div id="resultado"></div>
-				</form>
+						<div class="botones">
+							<input type="button" value="Borrar" onclick="borrar()">
+							<input type="button" value="Enviar" onclick="enviar()">
+						</div>
+						
+						Resultado: 
+						<div id="resultado"></div>
+					</form>
+				</div>
 			</div>
 			<div class="margen"></div>
 		</div>
