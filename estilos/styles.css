@@ -2,14 +2,25 @@ h1 {
 	text-align: center;
 }
 
+.vehiculo {
+	display:flex;
+}
+
+.margen, .indice {
+	width: 200px;
+	flex-shrink: 0;
+	padding-left: 200px;
+	padding-right: 25px;
+}
+
 .imagen_vehiculo {
 	height:200px;
+	padding-left: 50px;
 }
 
 .contenido {
 	padding:50px;
 	border:solid;
-	width: 500px;
 }
 
 .indice ul {
@@ -19,11 +30,9 @@ h1 {
 
 .fila_contenido {
 	vertical-align: top;
-}
-
-.tabla_contenido {
 	margin-left: auto;
     margin-right: auto;
+	display: flex;
 }
 
 p {
@@ -59,11 +68,22 @@ dd img {
 	margin-top: 0.5rem;
 }
 
-form > div:not(#resultado) {
+.botones {
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .color_favorito {
 	display:flex;
+}
+
+form {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+textarea {
+	width: 500px;
 }
