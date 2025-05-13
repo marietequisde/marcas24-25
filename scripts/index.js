@@ -11,24 +11,25 @@ function enviar() {
 	var texto = document.getElementById('multilinea').value;
 	var mes = document.getElementById('mes').value;
 	
-	var textoResultado = `Hola ${nombre}, tienes ${edad} años.\n`;
+	var textoResultado = `Hola ${nombre}, tienes ${edad} años.</br>`;
+	var divColor = `<div class="color_favorito">Tu color favorito es el <div style="height:20px; width:20px; background-color:${color}; margin-left:10px"></div>.</div>`;
 	
 	if (miedoVolar) {
-		textoResultado += "Tienes miedo a volar.\n"
+		textoResultado += "Tienes miedo a volar.</br>"
 	} else {
-		textoResultado += "No tienes miedo a volar.\n"
+		textoResultado += "No tienes miedo a volar.</br>"
 	}
 	
 	if (tieneCarnet) {
-		textoResultado += "Tienes carnet de conducir.\n"
+		textoResultado += "Tienes carnet de conducir.</br>"
 	} else {
-		textoResultado += "No tienes carnet de conducir.\n"
+		textoResultado += "No tienes carnet de conducir.</br>"
 	}
 	
-	textoResultado += `Vives en ${vivoEn}.\nViajas ${viajo}.\n` +
-						`Tu comida favorita es ${comida}.\nTu color favorito es el ${color}.\n` +
-						`Tu texto favorito es: "${texto}".\nTu mes favorito es ${mes}.`;
-	document.getElementById('resultado').innerText = textoResultado;
+	textoResultado += `Vives en ${vivoEn}.</br>Viajas ${viajo}.</br>` +
+						`Tu comida favorita es ${comida}.</br>${divColor}` +
+						`Tu texto favorito es: "${texto}".</br>Tu mes favorito es ${mes}.`;
+	document.getElementById('resultado').innerHTML = textoResultado;
 }
 
 function borrar() {

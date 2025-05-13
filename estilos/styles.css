@@ -59,7 +59,11 @@ dd img {
 	margin-top: 0.5rem;
 }
 
-form > div {
+form > div:not(#resultado) {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.color_favorito {
+	display:flex;
 }
